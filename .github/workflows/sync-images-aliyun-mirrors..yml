@@ -34,6 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/hhyo/archery:v1.11.1 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/archery:v1.11.1
-        skopeo copy docker://docker.io/metersphere/metersphere-ce-allinone:latest docker://registry.cn-hangzhou.aliyuncs.com/aishinye/metersphere-ce-allinone:latest
+        skopeo copy docker://docker.io/uozi/nginx-ui:latest docker://registry.cn-hangzhou.aliyuncs.com/aishinye/nginx-ui:latest
  
