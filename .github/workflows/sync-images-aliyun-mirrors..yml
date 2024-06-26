@@ -34,5 +34,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/uozi/nginx-ui:latest docker://registry.cn-hangzhou.aliyuncs.com/aishinye/nginx-ui:latest
+        skopeo copy docker://docker.io/mongo docker://registry.cn-hangzhou.aliyuncs.com/aishinye/mongo
+        skopeo copy docker://docker.io/mongo-express docker://registry.cn-hangzhou.aliyuncs.com/aishinye/mongo-express
  
