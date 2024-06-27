@@ -34,5 +34,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/xiaojusurvey/xiaoju-survey:1.1.6 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/xiaoju-survey:1.1.6
+        skopeo copy docker://docker.io/nginx:1.27.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/nginx:1.27.0
+        .1.6
  
