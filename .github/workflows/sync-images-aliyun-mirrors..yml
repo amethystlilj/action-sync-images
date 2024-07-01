@@ -34,7 +34,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.1.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/gitlab-runner:v17.1.0
-        skopeo copy docker://docker.io/prom/pushgateway:v1.9.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/pushgateway:v1.9.0
-        skopeo copy docker://docker.io/grafana/mimir:2.12.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/mimir:2.12.0
+        skopeo copy docker://docker.io/gitlab/gitlab-ee:17.0.3-ee.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/gitlab-ee:17.0.3-ee.0
+        skopeo copy docker://docker.io/atlassian/confluence:8.9.3 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/confluence:8.9.3
+        skopeo copy docker://docker.io/sonarqube:10.6-community docker://registry.cn-hangzhou.aliyuncs.com/aishinye/sonarqube:10.6-community
+        skopeo copy docker://docker.io/jupyter/datascience-notebook:latest docker://registry.cn-hangzhou.aliyuncs.com/aishinye/datascience-notebook:latest
  
