@@ -34,6 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/grafana/loki:3.0.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/loki:3.0.0
-        skopeo copy docker://docker.io/grafana/promtail:3.0.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/promtail:3.0.0
+        skopeo copy docker://docker.io/grafana/grafana:10.4.5 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/grafana:10.4.5
  
