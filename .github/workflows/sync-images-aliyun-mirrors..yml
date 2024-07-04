@@ -34,7 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/jenkins/jenkins:2.466-jdk21 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/jenkins:2.466-jdk21
+        skopeo copy docker://docker.io/jenkins/jenkins:2.466 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/jenkins:2.466
                                                       
                                                       
                                                       
