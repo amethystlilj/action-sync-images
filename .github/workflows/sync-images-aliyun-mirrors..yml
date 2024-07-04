@@ -34,9 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/mysql:8.4 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/mysql:8.4
-        skopeo copy docker://docker.io/easysoft/zentao:20.1.1 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/zentao:20.1.1
-        skopeo copy docker://docker.io/percona/percona-xtrabackup:8.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/percona-xtrabackup:8.0
+        skopeo copy docker://docker.io/jenkins/jenkins:2.466-jdk21 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/jenkins:2.466-jdk21
                                                       
                                                       
                                                       
