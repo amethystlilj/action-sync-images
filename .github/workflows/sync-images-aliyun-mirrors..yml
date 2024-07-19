@@ -37,5 +37,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/sonatype/nexus3:3.70.1-java17-ubi docker://registry.cn-hangzhou.aliyuncs.com/aishinye/nexus3:3.70.1-java17-ubi
+        skopeo copy docker://docker.io/sonatype/nexus3:3.70.1-java11-ubi docker://registry.cn-hangzhou.aliyuncs.com/aishinye/nexus3:3.70.1-java11-ubi
                                                       
