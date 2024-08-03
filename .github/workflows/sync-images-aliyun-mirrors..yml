@@ -39,5 +39,5 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://docker.io/easysoft/zentao:20.3.0 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/zentao:20.3.0
-        skopeo copy docker://docker.io/percona:5.7 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/percona:5.7                                                
+        skopeo copy docker://docker.io/percona:5.7 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/percona:5.7  
         skopeo copy docker://docker.io/jenkins/jenkins:2.470 docker://registry.cn-hangzhou.aliyuncs.com/aishinye/jenkins:2.470
