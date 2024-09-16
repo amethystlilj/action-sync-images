@@ -49,5 +49,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://docker.io/gitlab/gitlab-ee:17.3.2-ee.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-ee:17.3.2-ee.0
-        skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.3.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-runner:v17.3.2
         skopeo copy docker://docker.io/uozi/nginx-ui:v2.0.0-beta.33  docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:v2.0.0-beta.33
