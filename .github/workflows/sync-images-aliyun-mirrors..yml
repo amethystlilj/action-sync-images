@@ -48,5 +48,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/gitlab/gitlab-ee:17.4.1-ee.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-ee:17.4.1-ee.0
-        skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.4.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-runner:v17.4.1
+        skopeo copy docker://docker.io/gitlab/gitlab-ee:17.3.4-ee.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-ee:17.3.4-ee.0
+        skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.3.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-runner:v17.3.4
