@@ -44,9 +44,13 @@ jobs:
 #        skopeo copy docker://docker.io/grafana/loki:3.1.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.1.1
 #        skopeo copy docker://docker.io/grafana/grafana:11.1.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.1.4
 #        skopeo copy docker://docker.io/prom/prometheus:v2.54.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/prometheus:v2.54.0
+#        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
 #        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-08-17T01-24-54Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-08-17T01-24-54Z
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/gitlab/gitlab-ee:17.3.4-ee.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-ee:17.3.4-ee.0
-        skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.3.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-runner:v17.3.4
+        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
+        skopeo copy docker://docker.io/grafana/loki:3.2.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.2.0
+        skopeo copy docker://docker.io/grafana/grafana:11.2.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.2.1
+        skopeo copy docker://docker.io/grafana/mimir:2.14.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mimir:2.14.0
+        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-09-22T00-33-43Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-09-22T00-33-43Z
