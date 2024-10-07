@@ -49,8 +49,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
-        skopeo copy docker://docker.io/grafana/loki:3.2.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.2.0
-        skopeo copy docker://docker.io/grafana/grafana:11.2.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.2.1
-        skopeo copy docker://docker.io/grafana/mimir:2.14.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mimir:2.14.0
-        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-09-22T00-33-43Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-09-22T00-33-43Z
+        skopeo copy docker://docker.io/jenkins/jenkins:2.479 docker://${{vars.DOCKER_REGISTRY}}/aishinye/jenkins:2.479
+        skopeo copy docker://docker.io/easysoft/zentao:20.7.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/zentao:20.7.1
