@@ -49,4 +49,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/hhyo/archery:v1.11.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/archery:v1.11.3
+        skopeo copy docker://docker.io/hanchuanchuan/goinception:latest docker://${{vars.DOCKER_REGISTRY}}/aishinye/goinception:latest
