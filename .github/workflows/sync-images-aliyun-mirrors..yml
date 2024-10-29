@@ -40,13 +40,20 @@ jobs:
 #        skopeo copy docker://docker.io/postgres:15.8 docker://${{vars.DOCKER_REGISTRY}}/aishinye/postgres:15.8
 #        skopeo copy docker://docker.io/percona/percona-xtrabackup:8.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/percona-xtrabackup:8.0
 #        skopeo copy docker://docker.io/nginx:1.27.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx:1.27.1
-#        skopeo copy docker://docker.io/grafana/mimir:2.13.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mimir:2.13.0
-#        skopeo copy docker://docker.io/grafana/loki:3.1.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.1.1
-#        skopeo copy docker://docker.io/grafana/grafana:11.1.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.1.4
+#        skopeo copy docker://docker.io/grafana/mimir:2.14.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mimir:2.14.0
+#        skopeo copy docker://docker.io/grafana/promtail:3.1.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/promtail:3.1.2
+#        skopeo copy docker://docker.io/grafana/loki:3.1.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.1.2
+#        skopeo copy docker://docker.io/grafana/grafana:11.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.3.0
 #        skopeo copy docker://docker.io/prom/prometheus:v2.54.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/prometheus:v2.54.0
 #        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
 #        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-08-17T01-24-54Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-08-17T01-24-54Z
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/hanchuanchuan/goinception:v1.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/goinception:v1.3.0
+        skopeo copy docker://docker.io/nginx:1.27.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx:1.27.2
+        skopeo copy docker://docker.io/grafana/mimir:2.14.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mimir:2.14.0
+        skopeo copy docker://docker.io/grafana/promtail:3.1.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/promtail:3.1.2
+        skopeo copy docker://docker.io/grafana/loki:3.1.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.1.2
+        skopeo copy docker://docker.io/grafana/grafana:11.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.3.0
+        skopeo copy docker://docker.io/prom/prometheus:v2.55.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/prometheus:v2.55.0
+        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-10-13T13-34-11Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-10-13T13-34-11Z
