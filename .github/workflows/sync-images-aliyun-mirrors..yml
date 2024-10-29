@@ -47,7 +47,12 @@ jobs:
 #        skopeo copy docker://docker.io/prom/prometheus:v2.54.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/prometheus:v2.54.0
 #        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
 #        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-08-17T01-24-54Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-08-17T01-24-54Z
+#        skopeo copy docker://docker.io/uozi/nginx-ui:v2.0.0-beta.38 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:v2.0.0-beta.38
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/uozi/nginx-ui:v2.0.0-beta.38 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:v2.0.0-beta.38
+        skopeo copy docker://docker.io/nacos/nacos-server:v2.4.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nacos-server:v2.4.3
+        skopeo copy docker://docker.io/apache/rocketmq:5.3.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/rocketmq:5.3.1
+        skopeo copy docker://docker.io/apolloconfig/apollo-configservice:2.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/apollo-configservice:2.3.0
+        skopeo copy docker://docker.io/apolloconfig/apollo-adminservice:2.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/apollo-adminservice:2.3.0
+        skopeo copy docker://docker.io/apolloconfig/apollo-portal:2.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/apollo-portal:2.3.0
