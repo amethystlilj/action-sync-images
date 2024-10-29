@@ -51,6 +51,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
+        skopeo copy docker://docker.io/redis:7.4.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/redis:7.4.1
         skopeo copy docker://docker.io/nacos/nacos-server:v2.4.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nacos-server:v2.4.3
         skopeo copy docker://docker.io/apache/rocketmq:5.3.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/rocketmq:5.3.1
         skopeo copy docker://docker.io/apolloconfig/apollo-configservice:2.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/apollo-configservice:2.3.0
