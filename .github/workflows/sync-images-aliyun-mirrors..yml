@@ -51,4 +51,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/uozi/nginx-ui:2.0.0-beta.40 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:2.0.0-beta.40
+        skopeo copy docker://docker.io/hanchuanchuan/goinception:v1.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/goinception:v1.3.0
