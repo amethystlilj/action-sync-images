@@ -51,4 +51,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/percona/percona-xtrabackup:8.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/percona-xtrabackup:8.4
+        skopeo copy docker://docker.io/sonatype/nexus3:3.70.3-java11-ubi docker://${{vars.DOCKER_REGISTRY}}/aishinye/nexus3:3.70.3-java11-ubi
