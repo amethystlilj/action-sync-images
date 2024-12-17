@@ -46,9 +46,9 @@ jobs:
 #        skopeo copy docker://docker.io/grafana/grafana:11.3.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.3.0
 #        skopeo copy docker://docker.io/prom/prometheus:v2.54.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/prometheus:v2.54.0
 #        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
-#        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-08-17T01-24-54Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-08-17T01-24-54Z
+#        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-12-13T22-19-12Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-12-13T22-19-12Z
 #        skopeo copy docker://docker.io/uozi/nginx-ui:v2.0.0-beta.38 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:v2.0.0-beta.38
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/sonatype/nexus3:3.75.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nexus3:3.75.1
+        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-12-13T22-19-12Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-12-13T22-19-12Z
