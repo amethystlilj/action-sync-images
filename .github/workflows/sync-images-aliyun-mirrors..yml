@@ -52,3 +52,20 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://docker.io/gitlab/gitlab-ee:17.7.0-ee.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-ee:17.7.0-ee.0
+        skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.6.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-runner:v17.6.1
+        skopeo copy docker://docker.io/jenkins/jenkins:2.491 docker://${{vars.DOCKER_REGISTRY}}/aishinye/jenkins:2.491
+        skopeo copy docker://docker.io/easysoft/zentao:21.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/zentao:21.3
+        skopeo copy docker://docker.io/hanchuanchuan/goinception:latest docker://${{vars.DOCKER_REGISTRY}}/aishinye/goinception:latest
+        skopeo copy docker://docker.io/redis:7.4.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/redis:7.4.1
+        skopeo copy docker://docker.io/mysql:8.4.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mysql:8.4.3
+        skopeo copy docker://docker.io/postgres:15.10 docker://${{vars.DOCKER_REGISTRY}}/aishinye/postgres:15.10
+        skopeo copy docker://docker.io/percona/percona-xtrabackup:8.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/percona-xtrabackup:8.0
+        skopeo copy docker://docker.io/nginx:1.27.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx:1.27.3
+        skopeo copy docker://docker.io/grafana/mimir:2.14.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mimir:2.14.2
+        skopeo copy docker://docker.io/grafana/promtail:3.3.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/promtail:3.3.2
+        skopeo copy docker://docker.io/grafana/loki:3.3.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/loki:3.3.2
+        skopeo copy docker://docker.io/grafana/grafana:11.4.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/grafana:11.4.0
+        skopeo copy docker://docker.io/prom/prometheus:v3.0.1 docker://${{vars.DOCKER_REGISTRY}}/aishinye/prometheus:v3.0.1
+        skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
+        skopeo copy docker://docker.io/minio/minio:RELEASE.2024-12-18T13-15-44Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-12-18T13-15-44Z
+        skopeo copy docker://docker.io/uozi/nginx-ui:v2.0.0-beta.39 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:v2.0.0-beta.39
