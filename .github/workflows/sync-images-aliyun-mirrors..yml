@@ -69,4 +69,4 @@ jobs:
         skopeo copy docker://docker.io/prom/pushgateway:v1.10.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/pushgateway:v1.10.0
         skopeo copy docker://docker.io/minio/minio:RELEASE.2024-12-18T13-15-44Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2024-12-18T13-15-44Z
         skopeo copy docker://docker.io/uozi/nginx-ui:v2.0.0-beta.39 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:v2.0.0-beta.39
-        skopeo copy docker://docker.io/sonarqube:25.1.0.102122-community docker://${{vars.DOCKER_REGISTRY}}/aishinye/sonarqube:25.1.0.102122-community
+        skopeo copy docker://docker.io/sonarqube:25.2.0.102705-community docker://${{vars.DOCKER_REGISTRY}}/aishinye/sonarqube:25.2.0.102705-community
