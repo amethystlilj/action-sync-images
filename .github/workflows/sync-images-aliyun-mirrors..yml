@@ -71,3 +71,5 @@ jobs:
         skopeo copy docker://docker.io/minio/minio:RELEASE.2025-02-07T23-21-09Z docker://${{vars.DOCKER_REGISTRY}}/aishinye/minio:RELEASE.2025-02-07T23-21-09Z
         skopeo copy docker://docker.io/uozi/nginx-ui:2.0.0-rc.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/nginx-ui:2.0.0-rc.4
         skopeo copy docker://docker.io/sonarqube:25.2.0.102705-community docker://${{vars.DOCKER_REGISTRY}}/aishinye/sonarqube:25.2.0.102705-community
+        skopeo copy docker://docker.io/jupyter/datascience-notebook:latest docker://${{vars.DOCKER_REGISTRY}}/aishinye/datascience-notebook:latest
+                                                                                          
