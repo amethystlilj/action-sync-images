@@ -55,6 +55,7 @@ jobs:
         skopeo copy docker://docker.io/gitlab/gitlab-runner:v17.9.3 docker://${{vars.DOCKER_REGISTRY}}/aishinye/gitlab-runner:v17.9.3
         skopeo copy docker://docker.io/jenkins/jenkins:2.505 docker://${{vars.DOCKER_REGISTRY}}/aishinye/jenkins:2.505
         skopeo copy docker://docker.io/hanchuanchuan/goinception:latest docker://${{vars.DOCKER_REGISTRY}}/aishinye/goinception:latest
+        skopeo copy docker://docker.io/hhyo/archery:v1.12.0 docker://${{vars.DOCKER_REGISTRY}}/aishinye/archery:v1.12.0
         skopeo copy docker://docker.io/redis:7.4.2 docker://${{vars.DOCKER_REGISTRY}}/aishinye/redis:7.4.2
         skopeo copy docker://docker.io/mysql:8.4.4 docker://${{vars.DOCKER_REGISTRY}}/aishinye/mysql:8.4.4
         skopeo copy docker://docker.io/postgres:15.11 docker://${{vars.DOCKER_REGISTRY}}/aishinye/postgres:15.11
