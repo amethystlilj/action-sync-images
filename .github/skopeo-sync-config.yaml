@@ -1,0 +1,44 @@
+docker.io:
+  images:
+    gitlab/gitlab-ee:
+      - 17.10.5-ee.0
+    gitlab/gitlab-runner:
+      - v17.11.0
+    jenkins/jenkins:
+      - 2.507
+    hanchuanchuan/goinception:
+      - latest
+    hhyo/archery:
+      - v1.12.0
+    redis:
+      - 7.4.2
+    mysql:
+      - 8.4.4
+    postgres:
+      - 15.11
+    percona/percona-xtrabackup:
+      - 8.0
+    nginx:
+      - 1.27.4
+    grafana/mimir:
+      - 2.16.0
+    grafana/promtail:
+      - 3.4
+    grafana/loki:
+      - 3.4
+    grafana/grafana:
+      - 11.6.0
+    prom/prometheus:
+      - v3.2.1
+    prom/pushgateway:
+      - v1.11.1
+    prom/alertmanager:
+      - v0.28.1
+    minio/minio:
+      - RELEASE.2025-04-08T15-41-24Z
+    uozi/nginx-ui:
+      - 2.0.0-rc.5
+    sonarqube:
+      - 24.12.0.100206-community
+    jupyter/datascience-notebook:
+      - latest
