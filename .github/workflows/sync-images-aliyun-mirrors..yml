@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Aliyun Mirrors
       run: |
         #!/usr/bin/env bash
-        skopeo snyc --src yaml --dest docker ../skopeo-sync-config.yaml ${{vars.DOCKER_REGISTRY}}/aishinye/
+        skopeo sync --src yaml --dest docker ../skopeo-sync-config.yaml ${{vars.DOCKER_REGISTRY}}/aishinye/
