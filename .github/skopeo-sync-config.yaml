@@ -42,3 +42,5 @@ docker.io:
       - 24.12.0.100206-community
     jupyter/datascience-notebook:
       - latest
+    dreamacro/clash
+      - latest
