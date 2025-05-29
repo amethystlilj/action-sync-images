@@ -17,7 +17,7 @@ docker.io:
     mysql:
       - 8.4.4
     postgres:
-      - 15.11
+      - 15
     percona/percona-xtrabackup:
       - 8.0
     nginx:
