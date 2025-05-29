@@ -4,6 +4,8 @@ docker.io:
       - 17.11.3-ee.0
     gitlab/gitlab-runner:
       - v17.11.2
+    sonatype/nexus3:
+      - 3.80.0
     jenkins/jenkins:
       - 2.512
     hanchuanchuan/goinception:
@@ -35,7 +37,7 @@ docker.io:
     prom/alertmanager:
       - v0.28.1
     minio/minio:
-      - RELEASE.2025-04-08T15-41-24Z
+      - RELEASE.2025-05-24T17-08-30Z
     uozi/nginx-ui:
       - 2.1.0-rc.3
     sonarqube:
