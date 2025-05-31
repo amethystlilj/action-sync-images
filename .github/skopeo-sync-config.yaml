@@ -19,7 +19,7 @@ docker.io:
     postgres:
       - 15
     percona/percona-xtrabackup:
-      - 8.0
+      - 8.4
     nginx:
       - 1.28.0
     grafana/mimir:
