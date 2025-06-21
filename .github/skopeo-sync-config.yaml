@@ -5,9 +5,9 @@ docker.io:
     gitlab/gitlab-runner:
       - v18.0.2
     sonatype/nexus3:
-      - 3.80.0
+      - 3.81.1
     jenkins/jenkins:
-      - 2.512
+      - 2.515
     hanchuanchuan/goinception:
       - latest
     hhyo/archery:
@@ -39,7 +39,7 @@ docker.io:
     minio/minio:
       - RELEASE.2025-05-24T17-08-30Z
     uozi/nginx-ui:
-      - 2.1.0-rc.3
+      - 2.1.6
     sonarqube:
       - 25.5.0.107428-community
     jupyter/datascience-notebook:
