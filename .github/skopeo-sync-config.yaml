@@ -1,13 +1,13 @@
 docker.io:
   images:
     gitlab/gitlab-ee:
-      - 18.0.2-ee.0
+      - 18.2.0-ee.0
     gitlab/gitlab-runner:
       - v18.0.2
     sonatype/nexus3:
       - 3.81.1
     jenkins/jenkins:
-      - 2.515
+      - 2.519
     hanchuanchuan/goinception:
       - latest
     hhyo/archery:
