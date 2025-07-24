@@ -48,7 +48,5 @@ docker.io:
       - latest
     xiaojusurvey/xiaoju-survey:
       - 1.3.0
-    maguer4/openmaxio-console-amd64:
-      - latest
-    achockalingam/openmaxio:
-      - latest
+    aidencro/openmaxio-webui:
+      - v1.7.6
