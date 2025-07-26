@@ -23,7 +23,7 @@ docker.io:
     nginx:
       - 1.28.0
     grafana/mimir:
-      - 2.17.0
+      - 2.16.1
     grafana/promtail:
       - 3.5
     grafana/loki:
