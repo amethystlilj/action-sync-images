@@ -29,7 +29,7 @@ docker.io:
     grafana/loki:
       - 3.5
     grafana/grafana:
-      - 12.3.0
+      - 12.2
     prom/prometheus:
       - v3.6.0
     prom/pushgateway:
