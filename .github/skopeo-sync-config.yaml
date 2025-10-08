@@ -1,17 +1,17 @@
 docker.io:
   images:
     gitlab/gitlab-ee:
-      - 18.4.1-ee.0
+      - 18.4.2-ee.0
     gitlab/gitlab-runner:
       - v18.4.0
     sonatype/nexus3:
-      - 3.82.0
+      - 3.85.0
     jenkins/jenkins:
-      - 2.529
+      - 2.531
     hanchuanchuan/goinception:
       - latest
     hhyo/archery:
-      - v1.12.0
+      - v1.13.0
     redis:
       - 7
     mysql:
@@ -21,7 +21,7 @@ docker.io:
     percona/percona-xtrabackup:
       - 8.4
     nginx:
-      - 1.28.0
+      - 1.29
     grafana/mimir:
       - 2.17.1
     grafana/promtail:
