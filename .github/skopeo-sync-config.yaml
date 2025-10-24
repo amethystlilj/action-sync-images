@@ -51,4 +51,4 @@ docker.io:
     aidencro/openmaxio-webui:
       - v1.7.6
     php:
-      - 7.4.33-fpm-alpine
+      - 7.4.33-fpm
