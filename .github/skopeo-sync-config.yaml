@@ -52,3 +52,5 @@ docker.io:
       - v1.7.6
     php:
       - 7.4.33-fpm
+    apacherocketmq/rocketmq-dashboard:
+      - latest
