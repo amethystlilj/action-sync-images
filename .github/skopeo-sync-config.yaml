@@ -1,7 +1,7 @@
 docker.io:
   images:
     gitlab/gitlab-ee:
-      - 18.6.1-ee.0
+      - 18.5.0-ee.0
     gitlab/gitlab-runner:
       - v18.6.2
     sonatype/nexus3:
@@ -54,3 +54,5 @@ docker.io:
       - v1.7.6
     php:
       - 7.4.33-fpm
+    apacherocketmq/rocketmq-dashboard:
+      - 1.0.0
