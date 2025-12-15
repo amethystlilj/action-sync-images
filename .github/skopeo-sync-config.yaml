@@ -1,13 +1,13 @@
 docker.io:
   images:
     gitlab/gitlab-ee:
-      - 18.5.0-ee.0
+      - 18.6.2-ee.0
     gitlab/gitlab-runner:
       - v18.6.2
     sonatype/nexus3:
-      - 3.86.2
+      - 3.87.1
     jenkins/jenkins:
-      - 2.539
+      - 2.541
     hanchuanchuan/goinception:
       - latest
     hhyo/archery:
@@ -23,7 +23,7 @@ docker.io:
     nginx:
       - 1.29
     grafana/mimir:
-      - 2.17.2
+      - 2.17.3
     grafana/promtail:
       - 3.6
     grafana/loki:
@@ -41,7 +41,7 @@ docker.io:
     minio/mc:
       - latest
     uozi/nginx-ui:
-      - 2.2.1
+      - 2.3.2
     sonarqube:
       - 25.11.0.114957-community
     jupyter/datascience-notebook:
