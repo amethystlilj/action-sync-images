@@ -1,9 +1,9 @@
 docker.io:
   images:
     gitlab/gitlab-ee:
-      - 18.6.2-ee.0
+      - 18.7.0-ee.0
     gitlab/gitlab-runner:
-      - v18.6.2
+      - v18.7.0
     sonatype/nexus3:
       - 3.87.1
     jenkins/jenkins:
