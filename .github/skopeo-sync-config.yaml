@@ -38,6 +38,8 @@ docker.io:
       - v0.31.1
     minio/minio:
       - RELEASE.2025-09-07T16-13-09Z
+    minio/mc:
+      - latest
     uozi/nginx-ui:
       - 2.3.3
     sonarqube:
