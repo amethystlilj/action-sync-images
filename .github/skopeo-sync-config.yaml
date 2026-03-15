@@ -43,7 +43,7 @@ docker.io:
     uozi/nginx-ui:
       - 2.3.3
     sonarqube:
-      - 26.1.0.118079-community
+      - 26.2.0.119303-community
     jupyter/datascience-notebook:
       - latest
     dreamacro/clash:
