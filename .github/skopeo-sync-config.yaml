@@ -17,7 +17,7 @@ docker.io:
     mysql:
       - 8
     postgres:
-      - 15
+      - 17
     percona/percona-xtrabackup:
       - 8.4
     nginx:
