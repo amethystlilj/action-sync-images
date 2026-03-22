@@ -56,3 +56,5 @@ docker.io:
       - 7.4.33-fpm
     apacherocketmq/rocketmq-dashboard:
       - 1.0.0
+    atlassian/confluence:
+      - 8.5.9
