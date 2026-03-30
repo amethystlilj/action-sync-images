@@ -7,7 +7,7 @@ docker.io:
     sonatype/nexus3:
       - 3.90.1
     jenkins/jenkins:
-      - 2.554
+      - 2.556
     hanchuanchuan/goinception:
       - latest
     hhyo/archery:
