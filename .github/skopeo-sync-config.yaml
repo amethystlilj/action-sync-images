@@ -58,3 +58,5 @@ docker.io:
       - 1.0.0
     atlassian/confluence:
       - 8.5.9
+    apache/tika:
+      - latest-full
