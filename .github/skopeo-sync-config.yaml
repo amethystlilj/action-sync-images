@@ -7,7 +7,7 @@ docker.io:
     sonatype/nexus3:
       - 3.90.1
     jenkins/jenkins:
-      - 2.558
+      - 2.563
     hanchuanchuan/goinception:
       - latest
     hhyo/archery:
@@ -41,7 +41,7 @@ docker.io:
     minio/mc:
       - latest
     uozi/nginx-ui:
-      - 2.3.3
+      - 2.3.10
     sonarqube:
       - 26.2.0.119303-community
     jupyter/datascience-notebook:
